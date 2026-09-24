@@ -31,7 +31,7 @@ import com.puppycrawl.tools.checkstyle.api.TokenTypes;
 /**
  * <div>
  * Checks that the order of modifiers conforms to the suggestions in the
- * <a href="https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html">
+ * <a href="https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html">
  * Java Language specification, &#167; 8.1.1, 8.3.1, 8.4.3</a> and
  * <a href="https://docs.oracle.com/javase/specs/jls/se11/html/jls-9.html">9.4</a>.
  * The correct order is:
