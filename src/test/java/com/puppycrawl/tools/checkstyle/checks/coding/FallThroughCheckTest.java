@@ -502,4 +502,17 @@ public class FallThroughCheckTest extends AbstractModuleTestSupport {
                 expected);
     }
 
+    @Test
+    public void testCommentInsideStatement() throws Exception {
+        final String[] expected = {
+            "23:13: " + getCheckMessage(MSG_FALL_THROUGH),
+            "37:13: " + getCheckMessage(MSG_FALL_THROUGH),
+            "53:13: " + getCheckMessage(MSG_FALL_THROUGH),
+            "68:13: " + getCheckMessage(MSG_FALL_THROUGH),
+            "89:13: " + getCheckMessage(MSG_FALL_THROUGH),
+        };
+        verifyWithInlineConfigParser(
+                getPath("InputFallThroughCommentInsideStatement.java"), expected);
+    }
+
 }
